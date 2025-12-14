@@ -1,6 +1,7 @@
 /*
 ft_strcmp
-Directorio de entrega: ex17/ Archivos a entregar: ft_strcmp.c
+Directorio de entrega: ex17/ 
+Archivos a entregar: ft_strcmp.c
 Funciones autorizadas: Ninguna
 • Reproduce el comportamiento de la función strcmp (man strcmp).
 • Este debe ser su prototipo:
