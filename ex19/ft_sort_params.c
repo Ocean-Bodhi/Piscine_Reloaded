@@ -43,22 +43,23 @@ int	main(int argc, char **argv)
 {
 	int	i;
 	int	j;
-	int	result;
 
 	i = 1;
-	j = 0;
-	while (i < argc - 1)
+	while (i < argc -1)
 	{
-		result = ft_strcmp(argv[i], argv[i + 1]);
-		if (result <= 0) //el 1er arg es menor o = al 2º
-			i++;
-		if (result > 0)
+		j = i + 1;
+		while (j < argc)
 		{
-			ft_swap(&argv[i], &argv[i + 1]);
-			i = 1;
+			if (ft_strcmp(argv[i], argv[j]) > 0)
+			{
+				ft_swap(&argv[i], &argv[j]);
+			}
+			j++;
 		}
+		i++;
 	}
 	i = 1;
+	j = 0;
 	while (i < argc)
 	{
 		while(argv[i][j])
