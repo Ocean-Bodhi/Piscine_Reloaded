@@ -1,7 +1,7 @@
 /*
 Ejercicio 18 : ft_print_params
 Ejercicio: 18
-ft_print_params 
+ft_print_params
 Archivos a entregar: ft_print_params.c
  Directorio de entrega: ex18/ Funciones autorizadas: ft_putchar
 • Esto se trata de un programa, así que deberías tener una función main en tu archivo .c.
@@ -9,7 +9,7 @@ Archivos a entregar: ft_print_params.c
 • Ejemplo:
 $>./a.out test1 test2 test3
 test1
-test2 
+test2
 test3
 $>
 */
@@ -23,7 +23,7 @@ int	main(int argc, char **argv)
 
 	i = 1;
 	j = 0;
-	while (i <= argc)
+	while (i < argc)
 	{
 		while (argv[i][j])
 		{
