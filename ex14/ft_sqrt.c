@@ -13,7 +13,7 @@ int ft_sqrt(int nb)
     
     i = 0;
     
-    while (i < nb)
+    while (i <= nb / 2)
     {
         if (i * i == nb)
             return (i);
